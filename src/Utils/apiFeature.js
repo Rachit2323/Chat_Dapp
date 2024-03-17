@@ -5,14 +5,12 @@ const chatAppABI = chatAppJson.abi;
 import Web3 from "web3";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-require('dotenv').config();
-// const alchemyKey = "wss://polygon-mumbai.g.alchemy.com/v2/xPbcdHmp0VScR3UZ--hxX3-s9RqQ1i6q";
-// import { createAlchemyWeb3 } from "@alch/alchemy-web3";
-
-// const web3 = createAlchemyWeb3(alchemyKey);
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 
-const chatAppAddress = process.env.chatAppAddress;
+
+const chatAppAddress = "0x1043e7D806c7d5FB063F4f0f7Dc13a9E00737CA8";
 
 export const checkIfWalletConnected = async () => {
   try {
